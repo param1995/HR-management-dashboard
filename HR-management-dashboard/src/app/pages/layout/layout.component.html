@@ -1,0 +1,54 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+<app-header></app-header>
+<div class="d-flex">
+    <nav class="sidebar d-flex flex-column flex-shrink-0 position-fixed" [class.collapsed]="isSidebarCollapsed">
+        <button class="toggle-btn" (click)="toggleSidebar()">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+        <div class="p-4">
+        </div>
+        <div class="nav flex-column">
+            <a routerLink="/dashboard" routerLinkActive="active" class="sidebar-link text-decoration-none p-3">
+                <i class="fas fa-home me-3"></i>
+                <span class="hide-on-collapse fs-6 fw-medium">Dashboard</span>
+            </a>
+            <a routerLink="/Hr-employees" routerLinkActive="active" class="sidebar-link text-decoration-none p-3">
+                <i class="fas fa-users me-3"></i>
+                <span class="hide-on-collapse fs-6 fw-medium">Employees</span>
+            </a>
+            <a routerLink="/departments" class="sidebar-link text-decoration-none p-3">
+                <i class="fas fa-building me-3"></i>
+                <span class="hide-on-collapse fs-6 fw-medium">Departments</span>
+            </a>
+            <a routerLink="/create-post" class="sidebar-link text-decoration-none p-3">
+                <i class="fas fa-briefcase me-3"></i>
+                <span class="hide-on-collapse fs-6 fw-medium">Create Post</span>
+            </a>
+            <a routerLink="/status" class="sidebar-link text-decoration-none p-3">
+                <i class="fas fa-chart-line me-3"></i>
+                <span class="hide-on-collapse fs-6 fw-medium">Status</span>
+            </a>
+            <a routerLink="/setting" class="sidebar-link text-decoration-none p-3">
+                <i class="fas fa-cog me-3"></i>
+                <span class="hide-on-collapse fs-6 fw-medium">Settings</span>
+            </a>
+        </div>
+
+        <div class="profile-section mt-auto p-4">
+            <div class="d-flex align-items-center">
+                <img src="https://randomuser.me/api/portraits/women/70.jpg" style="height:60px" class="rounded-circle" alt="Profile">
+                <div class="ms-3 profile-info hide-on-collapse">
+                    <a routerLink="/profile" class="sidebar-link text-decoration-none ">
+                        <h6 class="text-white mb-0 fw-semibold fs-6">My profile</h6>
+                    </a>
+                    <small class="text-muted">Admin</small>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content" style="width: 100%;">
+        <router-outlet></router-outlet>
+    </main>
+</div>
+<!-- <app-footer></app-footer> -->

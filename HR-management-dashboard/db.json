@@ -1,0 +1,144 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Brinn",
+      "lastName": "Jephcote",
+      "email": "bjephcote0@archive.org",
+      "dob": "1981-10-05T12:09:39Z",
+      "gender": "Female",
+      "education": "Graduate",
+      "company": "Gabspot",
+      "experience": 36,
+      "package": 37
+    },
+    {
+      "id": 2,
+      "firstName": "Kenneth",
+      "lastName": "MacElholm",
+      "email": "kmacelholm1@sina.com.cn",
+      "dob": "1991-09-12T22:14:02Z",
+      "gender": "Male",
+      "education": "Matric",
+      "company": "Agivu",
+      "experience": 75,
+      "package": 17
+    },
+    {
+      "id": 3,
+      "firstName": "Kimmy",
+      "lastName": "Penniall",
+      "email": "kpenniall2@biblegateway.com",
+      "dob": "1980-05-19T08:23:30Z",
+      "gender": "Female",
+      "education": "Graduate",
+      "company": "Mycat",
+      "experience": 45,
+      "package": 17
+    },
+    {
+      "id": 4,
+      "firstName": "Amity",
+      "lastName": "Guillard",
+      "email": "aguillard3@blogspot.com",
+      "dob": "1992-04-28T23:34:29Z",
+      "gender": "others",
+      "education": "Graduate",
+      "company": "Youopia",
+      "experience": 10,
+      "package": 16
+    },
+    {
+      "firstName": "Parmeshwar",
+      "lastName": "Chavan",
+      "email": "param@2gmail.com",
+      "dob": "2025-06-23T18:30:00.000Z",
+      "gender": "female",
+      "education": "Graduation",
+      "company": "i link ",
+      "experience": 4,
+      "package": 4,
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Brinn",
+      "description": "Hi",
+      "department": "IT",
+      "date": "19-06-2025"
+    },
+    {
+      "id": 2,
+      "title": "Brinn",
+      "description": "I am good",
+      "department": "Mechanical",
+      "date": "19-03-2025"
+    },
+    {
+      "id": 3,
+      "title": "Brinn",
+      "description": "hi",
+      "department": "Civil",
+      "date": "10-06-2025"
+    },
+    {
+      "id": 4,
+      "title": "It",
+      "description": "Electrical",
+      "department": "bjephcote0@archive.org",
+      "date": "01-06-2024"
+    },
+    {
+      "title": "xyz",
+      "description": "hi2",
+      "department": "Marketing",
+      "date": "2025-06-19T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "title": "fgdf",
+      "description": "dfgd",
+      "department": "HR",
+      "date": "2025-06-20T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "title": "Arjent meeting",
+      "description": "All department",
+      "department": "Engineering",
+      "date": "2025-06-20T18:30:00.000Z",
+      "id": 7
+    }
+  ],
+  "my-profile": [
+    {
+      "id": 1,
+      "email": "bjephcote0@archive.org",
+      "gender": "Female",
+      "dob": "1981-10-05T1",
+      "mobile": "7216898989",
+      "department": "IT",
+      "address": "Dange chowk pune"
+    },
+    {
+      "id": 2,
+      "email": "bjephcote0@archive.org",
+      "gender": "Male",
+      "dob": "1981-10-05T1",
+      "mobile": "9216898989",
+      "department": "Electrical",
+      "address": "Dange chowk pune"
+    },
+    {
+      "email": "param@gmail.com",
+      "gender": "male",
+      "dob": "1994-01-31T18:30:00.000Z",
+      "mobile": "7218272352",
+      "department": "IT",
+      "address": "sfanskdfsdfds",
+      "id": 3
+    }
+  ]
+}

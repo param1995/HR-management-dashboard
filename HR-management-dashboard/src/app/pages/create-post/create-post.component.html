@@ -1,0 +1,43 @@
+<div class="create-post-wrapper mat-elevation-z4">
+    <h2 class="form-title">Create Post And Share</h2>
+
+    <form *ngIf="!formSubmitted" [formGroup]="postForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Post Title</mat-label>
+            <input matInput formControlName="title" placeholder="Enter title" required />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description" placeholder="Enter description" rows="4"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Department</mat-label>
+            <mat-select formControlName="department">
+                <mat-option *ngFor="let dept of departments" [value]="dept">{{ dept }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Publish Date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date" />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <div class="btn-row">
+            <button mat-stroked-button type="reset" (click)="postForm.reset()">
+        Reset
+      </button>
+
+            <button mat-raised-button color="primary" type="submit" [disabled]="postForm.invalid">
+        Submit
+      </button>
+        </div>
+    </form>
+    <div *ngIf="formSubmitted" class="success-message">
+        ✅ New post create successfully!
+    </div>
+</div>

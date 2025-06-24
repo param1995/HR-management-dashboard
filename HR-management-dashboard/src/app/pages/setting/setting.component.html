@@ -1,0 +1,30 @@
+<div class="settings-form-wrapper mat-elevation-z4">
+    <h2 class="form-title">Change Password</h2>
+    <form [formGroup]="passwordForm" (ngSubmit)="onSubmit()">
+        <div class="form-grid">
+            <mat-form-field appearance="outline">
+                <mat-label>Old Password</mat-label>
+                <input matInput type="password" formControlName="oldPassword" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>New Password</mat-label>
+                <input matInput type="password" formControlName="newPassword" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>Re-enter New Password</mat-label>
+                <input matInput type="password" formControlName="confirmPassword" />
+            </mat-form-field>
+        </div>
+
+        <div class="btn-row form-grid">
+            <button mat-stroked-button type="button" (click)="passwordForm.reset()">
+        Reset
+      </button>
+            <button mat-raised-button color="primary" type="submit" [disabled]="passwordForm.invalid">
+        Update Password
+      </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,148 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    height: 46px;
+    width: 100%;
+    background-color: #1c1c1c;
+    z-index: 999;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    justify-self: end;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+    #toggle:checked~.nav-links {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+body {
+    padding-top: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #34c759;
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 1rem;
+    }
+    .nav-links li {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    #toggle:checked+.hamburger+.nav-links {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+.notification-icon,
+.user-icon {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: white;
+}
+
+.notification-icon:hover,
+.user-icon:hover {
+    color: #34c759;
+}

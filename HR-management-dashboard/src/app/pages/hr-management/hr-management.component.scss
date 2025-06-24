@@ -1,0 +1,90 @@
+.em-department {
+    margin-left: 222px;
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: calc(100% - 200px);
+}
+
+.outline {
+    width: 400px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-sort-header {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.custom-table {
+    width: 80px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .em-department {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 1rem;
+    }
+}
+
+.em-department {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    overflow-x: clip;
+}
+
+mat-toolbar {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+button[mat-raised-button],
+button[mat-icon-button] {
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+}
+
+table mat-header-cell {
+    font-weight: bold;
+    font-size: 14px;
+    color: #0d47a1;
+    text-align: left;
+}
+
+table mat-cell {
+    font-size: 13px;
+    color: #444;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+}
+
+mat-form-field input {
+    font-size: 14px;
+    font-family: "Verdana", sans-serif;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+    .em-department {
+        text-align: center;
+        font-size: 13px;
+    }
+    mat-toolbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+}

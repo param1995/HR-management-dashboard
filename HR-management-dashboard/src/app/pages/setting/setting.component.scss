@@ -1,0 +1,50 @@
+.settings-form-wrapper {
+    max-width: 100%;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    .form-title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-left: 222px;
+    }
+    .full-width {
+        grid-column: span 2;
+    }
+    .btn-row {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    // For screens < 768px (tablets & side panel widths)
+    @media (max-width: 768px) {
+        .form-grid {
+            grid-template-columns: 1fr; // stack everything
+        }
+        .full-width {
+            grid-column: span 1;
+        }
+        .btn-row {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+    // For screens < 480px (mobile phones)
+    @media (max-width: 480px) {
+        padding: 1rem;
+        .form-title {
+            font-size: 1.25rem;
+        }
+        mat-form-field {
+            width: 100%;
+        }
+    }
+}
